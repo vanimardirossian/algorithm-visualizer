@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sorting Visualizer</title>
+        <link rel="stylesheet" href="./sortingStyle.css" />
+        <link rel="icon" href="../images/icon.png" />
+    </head>
+
+    <body>
+        <div class="global">
+            <div class="sidebar">
+                <div class="sort_buttons_wrapper">
+                    <h1 class="sorting_title">Sorting Visualizer</h1>
+                    <button class="reset" onClick="window.location.reload();">Reset</button>
+                    <h3 class="sorting_title_h3">Choose Array Size</h3>
+                    <input
+                        type="number"
+                        class="array_size sorting_input"
+                        placeholder="Size"
+                    />
+                    <button class="new_array button">Create Array</button>
+
+                    <h3 class="sorting_title_h3">Choose Delay Speed</h3>
+                    <input
+                        type="number"
+                        class="sorting_delay sorting_input"
+                        placeholder="Delay (ms)"
+                    />
+
+                    <h3 class="sorting_title_h3">Sort</h3>
+                    <button class="bubble button">Bubble Sort</button>
+                    <button class="insertion button">Insertion Sort</button>
+                    <button class="selection button">Selection Sort</button>
+                    <button class="merge button">Merge Sort</button>
+                    <button class="quick button">Quick Sort</button>
+                </div>
+                <a class="back" href="../index.html">&laquo; Go Back</a>
+            </div>
+            <div class="barscreen">
+                <div class="bars"></div>
+            </div>
+        </div>
+        <script src="./scripts/colorScheme.js"></script>
+        <script src="./scripts/sortingUtils.js"></script>
+        <script src="./scripts/sortingAlgorithms.js"></script>
+        <script src="./scripts/utils.js"></script>
+        <script src="./scripts/main.js"></script>
+    </body>
+</html>
